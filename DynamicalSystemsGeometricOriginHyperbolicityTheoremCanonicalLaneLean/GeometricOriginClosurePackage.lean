@@ -1,0 +1,23 @@
+import canonicalLaneMathlib.AdmissibleClass
+import HautevilleHouse.DynamicalSystemsGeometricOriginHyperbolicityTheoremCanonicalLaneLean.DynamicalSystemPackage
+import HautevilleHouse.DynamicalSystemsGeometricOriginHyperbolicityTheoremCanonicalLaneLean.HyperbolicSetPackage
+import HautevilleHouse.DynamicalSystemsGeometricOriginHyperbolicityTheoremCanonicalLaneLean.SmaleHorseshoePackage
+import HautevilleHouse.DynamicalSystemsGeometricOriginHyperbolicityTheoremCanonicalLaneLean.AnosovFlowPackage
+import HautevilleHouse.DynamicalSystemsGeometricOriginHyperbolicityTheoremCanonicalLaneLean.PesinTheoryPackage
+
+namespace HautevilleHouse
+namespace DynamicalSystemsGeometricOriginHyperbolicityTheoremCanonicalLaneLean
+
+structure GeometricOriginClosurePackage (A : AdmissibleClass) where
+  dynamicalSystem : DynamicalSystemPackage
+  hyperbolicSet : HyperbolicSetPackage
+  horseshoe : SmaleHorseshoePackage
+  anosovFlow : AnosovFlowPackage
+  pesinTheory : PesinTheoryPackage
+  bridgeClosed : bridgeClosed A
+  gateClosed : gateClosed A
+
+def GeometricOriginClosure (A : AdmissibleClass) : Prop :=
+  bridgeClosed A ∧ gateClosed A
+end DynamicalSystemsGeometricOriginHyperbolicityTheoremCanonicalLaneLean
+end HautevilleHouse

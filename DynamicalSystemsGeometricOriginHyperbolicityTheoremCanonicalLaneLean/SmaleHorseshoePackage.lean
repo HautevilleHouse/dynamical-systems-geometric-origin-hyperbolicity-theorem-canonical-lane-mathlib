@@ -1,0 +1,12 @@
+import canonicalLaneMathlib.AdmissibleClass
+
+namespace HautevilleHouse
+namespace DynamicalSystemsGeometricOriginHyperbolicityTheoremCanonicalLaneLean
+
+structure SmaleHorseshoePackage where
+  rectangleDecomposition : Prop
+  symbolicDynamics : Prop
+  invariantCantorSet : Prop
+  topologicalConjugacy : Prop
+end DynamicalSystemsGeometricOriginHyperbolicityTheoremCanonicalLaneLean
+end HautevilleHouse

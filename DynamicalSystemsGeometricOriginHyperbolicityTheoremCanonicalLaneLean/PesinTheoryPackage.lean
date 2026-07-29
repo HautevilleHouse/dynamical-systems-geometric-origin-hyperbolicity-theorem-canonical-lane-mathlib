@@ -1,0 +1,12 @@
+import canonicalLaneMathlib.AdmissibleClass
+
+namespace HautevilleHouse
+namespace DynamicalSystemsGeometricOriginHyperbolicityTheoremCanonicalLaneLean
+
+structure PesinTheoryPackage where
+  nonuniformHyperbolicity : Prop
+  lyapunovExponents : Prop
+  stableManifoldTheorem : Prop
+  entropyFormula : Prop
+end DynamicalSystemsGeometricOriginHyperbolicityTheoremCanonicalLaneLean
+end HautevilleHouse
